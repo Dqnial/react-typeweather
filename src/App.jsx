@@ -25,10 +25,10 @@ import rainNightBg from "./images/Weather=Rain, Moment=Night.png";
 import snowDayBg from "./images/Weather=Snow, Moment=Day.png";
 import snowNightBg from "./images/Weather=Snow, Moment=Night.png";
 
-import sunDimLight from "./images/svg/Type=sun-dim-light.svg";
 import thermometerSimpleLight from "./images/svg/Type=thermometer-simple-light.svg";
 import dropLight from "./images/svg/Type=drop-light.svg";
 import cloudRainLight from "./images/svg/Type=cloud-rain-light.svg";
+import windLight from "./images/svg/Type=wind-light.svg";
 
 export default function App() {
   const [geo, setGeo] = useState("");
@@ -323,7 +323,7 @@ export default function App() {
               <ul className="details__list">
                 <li className="details__item">
                   <div className="details__item-text">
-                    <img src={sunDimLight} alt="" />
+                    <img src={thermometerSimpleLight} alt="" />
                     <p>Тепловое ощущение</p>
                   </div>
                   <div className="details__item-value">
@@ -332,7 +332,7 @@ export default function App() {
                 </li>
                 <li className="details__item">
                   <div className="details__item-text">
-                    <img src={thermometerSimpleLight} alt="" />
+                    <img src={cloudRainLight} alt="" />
                     <p>Вероятность дождя</p>
                   </div>
                   <div className="details__item-value">
@@ -341,7 +341,7 @@ export default function App() {
                 </li>
                 <li className="details__item">
                   <div className="details__item-text">
-                    <img src={dropLight} alt="" />
+                    <img src={windLight} alt="" />
                     <p>Скорость ветра</p>
                   </div>
                   <div className="details__item-value">
@@ -350,7 +350,7 @@ export default function App() {
                 </li>
                 <li className="details__item">
                   <div className="details__item-text">
-                    <img src={cloudRainLight} alt="" />
+                    <img src={dropLight} alt="" />
                     <p>Влажность воздуха</p>
                   </div>
                   <div className="details__item-value">
